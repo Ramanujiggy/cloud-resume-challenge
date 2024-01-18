@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths "/*" --profile-name Cloud-Resume-endpoints --name robert-gelin --resource-group cloud-shell-storage-westus
+           az cdn endpoint purge --content-paths "/*" --profile-name CDN-Resume --name CDN-resume-endpoint1 --resource-group cloud-shell-storage-westus
    
    #Azure Logout 
     - name: logout
