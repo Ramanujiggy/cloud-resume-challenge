@@ -358,23 +358,7 @@ label {
 }
 
 /* added code to center the hexagons on the services page */
-.hexagon-menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-@media (max-width: 768px) {
-  .hexagon-menu {
-    position: static;
-    /* Reset the position for smaller screens */
-    transform: none;
-    /* Reset the transform */
-    margin: 0 auto;
-    /* Center it horizontally with margin */
-  }
-}
 
 /*------------------------------------------------
     Home Page
