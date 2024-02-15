@@ -115,6 +115,7 @@ h5 {
 	display: block;
 	margin: 0 auto;
 	padding-top: 20px;
+	width: 75px;
 }
 
 #experience .short-description {
@@ -182,6 +183,14 @@ h5 {
 	text-align: center;
 }
 
+#resume-container .col-md-6 {
+padding: 3%;
+}
+
+#resume-container .col-md-3{
+	padding-left: 2%;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~MEDIA QUERIES~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -189,7 +198,8 @@ h5 {
 
 @media only screen and (min-width: 992px) {
 	#experience .col-md-7 {
-		border-left: 2px solid black;
+		border-left: 1px rgb(65, 61, 61);
+		text-align: center;
 	}
 
 	#education .col-md-8 {
@@ -219,7 +229,9 @@ h5 {
 	}
 
 	#references .col-md-4 {
-		margin-bottom: 20px;
+		margin-bottom: 3%;
+		
+
 	}
 
 	#experience .employer-img {
