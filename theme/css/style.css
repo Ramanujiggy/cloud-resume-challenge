@@ -1,6 +1,25 @@
-html,
+
+
+
+
+.jura-text {
+	font-family: "Jura", sans-serif;
+	font-optical-sizing: auto;
+	font: weight 300px;
+	;
+	font-style: normal;
+}
+
+
+h5 {
+	font-size: larger;
+	font-weight: 600;
+	
+}
+
+
 body {
-	background: #777;
+	background: #486b60;
 	padding: 20px 0;
 }
 
@@ -9,13 +28,17 @@ h5 {
 }
 
 #resume-container {
-	background: rgba(255, 255, 255, 1);
-	color: black !important;
+	background: rgb(230, 233, 217);
+	margin:auto;
+	color: black;
 	opacity: 1 !important;
 	margin: 40px;
 	padding-bottom: 20px;
 	border-radius: 10px;
 }
+
+
+
 
 #resume-container a {
 	color: black;
@@ -114,13 +137,20 @@ h5 {
 #experience .employer-img {
 	display: block;
 	margin: 0 auto;
-	padding-top: 20px;
 	width: 75px;
+	border:  1px solid black;
 }
 
 #experience .short-description {
 	/* padding-top: 20px; */
 }
+
+
+#education h2 {
+	padding-top:2%;
+	padding-left:2%;
+}
+
 
 #education {
 	padding: 0 20px;
@@ -134,8 +164,14 @@ h5 {
 	text-align: center;
 }
 
-#computers {
+#skills {
 	padding: 0 20px;
+	flex-direction: column;
+}
+
+#skills h2 {
+	padding-top: 2%;
+	padding-left: 2%;
 }
 
 #resume-container .pills {
@@ -184,11 +220,14 @@ h5 {
 }
 
 #resume-container .col-md-6 {
-padding: 3%;
+	padding-top: 2%;
+	padding-left:3%;
+	
+
 }
 
-#resume-container .col-md-3{
-	padding-left: 2%;
+#resume-container .col-md-3 {
+	padding-left: 1%;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -203,7 +242,7 @@ padding: 3%;
 	}
 
 	#education .col-md-8 {
-		border-left: 2px solid black;
+		padding: 2%;
 	}
 }
 
@@ -230,7 +269,7 @@ padding: 3%;
 
 	#references .col-md-4 {
 		margin-bottom: 3%;
-		
+
 
 	}
 
@@ -255,7 +294,7 @@ padding: 3%;
 }
 
 @media only screen and (max-width: 567px) {
-	#computers ul {
+	#skills ul {
 		padding-left: 10px;
 	}
 }
