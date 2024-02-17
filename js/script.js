@@ -1,16 +1,13 @@
 // script.js
+const count =
+document.getElementById('count');
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Add event listeners to all toggle buttons
-    document.querySelectorAll('.toggle-details').forEach(button => {
-    button.addEventListener('click', function() {
-        const details = this.parentElement.querySelector('.expanded-details');
-        details.classList.toggle('expanded');
-        if (details.classList.contains('expanded')) {
-        this.innerText = 'See Less';
-        } else {
-        this.innerText = 'See More';
-        }
-    });
-    });
-});
+
+updateVisitCount();
+
+function updateVisitCount(){
+    fetch('https://api.countapi.xyz/update/danielazocardev/codepen/?amount=1')
+    .then(res => res.json())
+    .then(res=>{count.innerHTML=res.value});
+}
+
