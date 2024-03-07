@@ -6,7 +6,6 @@
 	font-family: "Jura", sans-serif;
 	font-optical-sizing: auto;
 	font: weight 300px;
-	;
 	font-style: normal;
 }
 
@@ -105,6 +104,7 @@ h5 {
 
 #resume-container #summary {
 	padding: 50px 10px 0;
+	
 }
 
 #resume-container #summary .summary {
