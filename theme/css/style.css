@@ -1,7 +1,4 @@
 
-
-
-
 .jura-text {
 	font-family: "Jura", sans-serif;
 	font-optical-sizing: auto;
@@ -26,6 +23,9 @@ h5 {
 	font-weight: bold;
 }
 
+
+
+
 #resume-container {
 	background: rgb(230, 233, 217);
 	margin:auto;
@@ -37,8 +37,6 @@ h5 {
 }
 
 
-
-
 #resume-container a {
 	color: black;
 	text-decoration: underline;
@@ -46,6 +44,8 @@ h5 {
 
 #resume-container hr {
 	border-bottom: 2px solid black;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #resume-container header {
@@ -111,6 +111,9 @@ h5 {
 	padding: 0 20px;
 }
 
+#summary h2 {
+	text-align: center;
+}
 #resume-container .skill-text {
 	text-align: center;
 }
@@ -124,7 +127,10 @@ h5 {
 	padding: 0 20px;
 }
 
-#experience h2,
+#experience h2{
+	text-align: center;
+	padding-top: 2%;
+}
 #experience h3,
 #experience h4 {
 	margin: 0 !important;
@@ -139,10 +145,16 @@ h5 {
 	margin: 0 auto;
 	width: 75px;
 	border:  1px solid black;
+	margin-bottom: 2%;
+	margin-left: 1%;
+	margin-right:1%;
+	box-shadow: 4px 4px 4px #444;
 }
 
 #experience .short-description {
-	/* padding-top: 20px; */
+	padding-top: 1%;
+	text-align: left;
+	word-spacing;
 }
 
 
@@ -204,7 +216,7 @@ h5 {
 }
 
 #references {
-	padding: 0 20px;
+	padding: 2 20px;
 	margin: 20px 0;
 	text-align: center;
 }
@@ -220,11 +232,17 @@ h5 {
 }
 
 #resume-container .col-md-6 {
-	padding-top: 2%;
-	padding-left:3%;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 2%;
 	
 
 }
+
+#vbohannon {
+	padding-bottom: 20px;
+}
+
 
 #resume-container .col-md-3 {
 	padding-left: 1%;
@@ -233,12 +251,13 @@ h5 {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~MEDIA QUERIES~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media only screen and (min-width: 1100px) and (max-width: 1405px) {}
+
 
 @media only screen and (min-width: 992px) {
 	#experience .col-md-7 {
 		border-left: 1px rgb(65, 61, 61);
 		text-align: center;
+		padding: 2%;
 	}
 
 	#education .col-md-8 {
@@ -246,7 +265,7 @@ h5 {
 	}
 }
 
-@media only screen and (max-width: 1200px) {}
+
 
 @media only screen and (max-width: 990px) {
 	.past-employer {
@@ -269,19 +288,16 @@ h5 {
 
 	#references .col-md-4 {
 		margin-bottom: 3%;
-
-
 	}
+
 
 	#experience .employer-img {
 		padding-top: 0;
 		max-width: 200px;
+		
 	}
 }
 
-@media only screen and (max-width: 960px) {}
-
-@media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 665px) {
 	.specializations ul {
