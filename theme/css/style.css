@@ -15,7 +15,7 @@ h5 {
 
 
 body {
-	background: #486b60;
+	background: #003f27c2;
 	padding: 20px 0;
 }
 
@@ -27,13 +27,13 @@ h5 {
 
 
 #resume-container {
-	background: rgb(230, 233, 217);
-	margin:auto;
+	background: #F3EDE0;
 	color: black;
 	opacity: 1 !important;
 	margin: 40px;
 	padding-bottom: 20px;
 	border-radius: 10px;
+	box-shadow: 4px 4px 6px #444;
 }
 
 
@@ -49,14 +49,14 @@ h5 {
 }
 
 #resume-container header {
-	background: #4caf7c;
+	background: #F3EDE0;
 	padding: 40px 0 20px;
 	position: relative;
 	z-index: 1;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 }
-
+/*
 #resume-container header:after {
 	background: inherit;
 	content: "";
@@ -68,7 +68,8 @@ h5 {
 	z-index: -1;
 	-webkit-backface-visibility: hidden;
 }
-
+*/
+/*
 #resume-container header:after {
 	bottom: 0;
 	-webkit-transform: skewY(-2.5deg);
@@ -76,60 +77,91 @@ h5 {
 	-webkit-transform-origin: 100%;
 	transform-origin: 100%;
 }
-
-#resume-container header .resume-portfolio-pic {
-	border-radius: 50%;
-	height: 200px;
-	width: 200px;
-	margin: 0 auto;
-	display: block;
-}
+*/
 
 .resume-name {
-	text-align: center;
-	color: white;
-	padding-top: 50px;
+	display: flex;
+	flex-flow: column;
+	text-align:left;
+	color: black;
+	margin-right: 70%;
+	box-shadow: 1px 1px 4px #8d8c8c;
+	margin-left: 3%;
+	border-radius: 5px;
 }
 
-#resume-container .contact-info {
-	text-align: center;
-	padding: 10px 0;
-	margin: 20px 0;
-	color: white;
+.resume-name:hover{
+	box-shadow: 2px 2px 6px #000000;
+
+}
+.resume-name h1{
+	padding-left: 2%;
+
 }
 
+.resume-name span {
+	padding-left :3%;
+	padding-bottom: 2px;
+
+}
+.resume-name #spanbottom{
+	padding-bottom: 4%;
+}
 #resume-container .contact-info a {
-	color: white;
+	color: black;
 }
 
 #resume-container #summary {
-	padding: 50px 10px 0;
+	margin-left: 4%;
+	margin-right: 20%;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #444;
 	
 }
 
+#resume-container #summary:hover{
+	box-shadow: 2px 2px 6px #000000;
+
+}
+
 #resume-container #summary .summary {
-	padding: 0 20px;
+	padding-left: 8px;
+	padding-bottom: 2px;
 }
 
 #summary h2 {
-	text-align: center;
+	text-align:left;
+	padding-top: 2%;
 }
 #resume-container .skill-text {
 	text-align: center;
 }
 
-#resume-container .contact-info .email,
+#resume-container .contact-info .email{
+	text-align: left;
+	padding-left:4%;
+}
 #resume-container .contact-info .phone {
 	margin-bottom: 20px;
 }
 
 #experience {
-	padding: 0 20px;
+	padding-left: 20px;
+	box-shadow: 1px 1px 4px #444;
+	margin-top: 20px;
+	margin-left: 3%;
+	margin-right: 12%;
+	border-radius: 5px;
+	
+}
+
+#experience:hover{
+		box-shadow: 2px 2px 6px #000000;
 }
 
 #experience h2{
-	text-align: center;
-	padding-top: 2%;
+	text-align: left;
+	padding-top: 3%;
 }
 #experience h3,
 #experience h4 {
@@ -137,7 +169,8 @@ h5 {
 }
 
 #experience .past-employer {
-	padding: 20px 0;
+	
+
 }
 
 #experience .employer-img {
@@ -154,7 +187,6 @@ h5 {
 #experience .short-description {
 	padding-top: 1%;
 	text-align: left;
-	word-spacing;
 }
 
 
@@ -166,6 +198,14 @@ h5 {
 
 #education {
 	padding: 0 20px;
+	box-shadow: 1px 1px 4px #8d8c8c;
+	margin-left: 150px;
+	margin-right: 80px;
+	border-radius: 5px;
+}
+
+#education:hover{
+	box-shadow: 4px 4px 6px #444;
 }
 
 #education .past-school {
@@ -179,6 +219,14 @@ h5 {
 #skills {
 	padding: 0 20px;
 	flex-direction: column;
+	box-shadow: 1px 1px 4px #8d8c8c;
+	margin-right: 15%;
+	margin-left:5%;
+	border-radius: 5px;
+}
+
+#skills:hover{
+	box-shadow: 4px 4px 6px #444;
 }
 
 #skills h2 {
@@ -216,9 +264,19 @@ h5 {
 }
 
 #references {
-	padding: 2 20px;
-	margin: 20px 0;
-	text-align: center;
+	box-shadow: 1px 1px 4px #8d8c8c;
+	padding-left: 20px;
+	padding-top: 5px;
+	margin-top:  20px;
+	margin-left: 40%;
+	margin-right:10%;
+	text-align: left;
+	border-radius: 5px;
+}
+
+#references:hover{
+	box-shadow: 4px 4px 6px #444;
+
 }
 
 #resume-container .linkedin-link {
@@ -248,6 +306,11 @@ h5 {
 	padding-left: 1%;
 }
 
+#experience .col-md-7#bottomitem {
+	padding-bottom: 4%;
+
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	~~~~~MEDIA QUERIES~~~~
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -255,9 +318,10 @@ h5 {
 
 @media only screen and (min-width: 992px) {
 	#experience .col-md-7 {
-		border-left: 1px rgb(65, 61, 61);
-		text-align: center;
-		padding: 2%;
+		
+		text-align: left;
+		padding: 12px;
+		padding-left: 5%;
 	}
 
 	#education .col-md-8 {
